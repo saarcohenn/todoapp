@@ -1,0 +1,23 @@
+{
+  "name": "todoApp",
+  "version": "1.0.0",
+  "description": "Basic todo app with server-side [May 04 2021]",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client --prefix client\""
+  },
+  "keywords": [],
+  "author": "Saar Cohen",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.2",
+    "nodemon": "^2.0.7"
+  }
+}
